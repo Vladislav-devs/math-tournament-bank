@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Решения задач — Математический турнир школы «Мариамполь»</title>
+  <link rel="icon" type="image/png" href="assets/logo-mariampol.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="solutions.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero hero-small">
+      <div class="hero-content">
+        <div class="hero-brand">
+        <div class="brand-logo-slot">
+          <img class="brand-logo brand-logo-school" src="assets/logo-mariampol.png" alt="Школа «Мариамполь»" width="168" height="168">
+        </div>
+        </div>
+        <div class="hero-titles">
+          <h1 class="brand-title">Математический турнир школы «Мариамполь»</h1>
+          <p class="brand-support">Решения с подробным разбором</p>
+      </div>
+        <p class="hero-lead">Сначала попробуйте решить задачу сами. Если не получается — откройте спойлер с решением.</p>
+      </div>
+    </header>
+
+    <section class="bank" aria-label="Решения">
+      <div class="bank-topline">
+        <div>
+          <p class="section-label">Выберите класс</p>
+          <h2>Задачи и решения</h2>
+        </div>
+        <div class="actions">
+          <a class="reset-button" href="index.html">← Банк задач</a>
+          <button class="reset-button" id="collapseButton" type="button">Свернуть все</button>
+        </div>
+      </div>
+      <nav class="tabs" aria-label="Классы" role="tablist">
+        <button class="tab active" role="tab" aria-selected="true" data-grade="4">4 класс</button>
+        <button class="tab" role="tab" aria-selected="false" data-grade="5">5 класс</button>
+        <button class="tab" role="tab" aria-selected="false" data-grade="6">6 класс</button>
+        <button class="tab" role="tab" aria-selected="false" data-grade="7">7 класс</button>
+        <button class="tab" role="tab" aria-selected="false" data-grade="8">8 класс</button>
+      </nav>
+      <div class="task-meta solution-meta"><span id="taskCount"></span><input class="search" id="search" type="search" placeholder="Поиск по условию или номеру"></div>
+      <div class="solutions" id="solutions"></div>
+    </section>
+  </main>
+  <button class="to-top" id="toTopButton" type="button" aria-label="Наверх">↑</button>
+  <footer>
+    <img class="footer-logo" src="assets/adres-logo.png" alt="ООО «СТК „Добрострой“»" width="201" height="46">
+    <div>Банк задач составлен для самостоятельной подготовки к отборочному этапу математиками (или математическим советом) школы «Мариамполь».</div>
+  </footer>
+  <script src="tasks-data.js"></script>
+  <script src="solutions-data.js"></script>
+  <script src="solutions.js"></script>
+</body>
+</html>
